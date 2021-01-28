@@ -112,5 +112,32 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
         System.out.println("printJobs is not implemented yet");
+        //print job if there is a search result
+        //iterate over an arraylist of jobs(which each is a hashmap)
+        for (int i=0; i<someJobs.size(); i++){
+            someJobs.get(i)
+
+        }
+        //variables needed: jobs
+        //make a nested loop to loop over each hashmap
+        //make it so nexted loop will pring out any new field added  to the job records without any updates to printJobs
+        /**
+         * *****
+         * position type: Data Scientist / Business Intelligence
+         * name: Sr. IT Analyst (Data/BI)
+         * employer: Bull Moose Industries
+         * location: Saint Louis
+         * core competency: Statistical Analysis
+         * *****
+         *
+         * To do this, you’ll need to iterate over an ArrayList of jobs. Each job is itself a HashMap.
+         * While you can get each of the items out of the HashMap using the known keys (employer, location, etc.),
+         * think instead about creating a nested loop to loop over each HashMap.
+         * If a new field is added to the job records,
+         * this approach will print out the new field without any updates to printJobs.
+         */
+
+
+        //print something if there are no results
     }
 }
