@@ -125,4 +125,25 @@ public class JobData {
         }
     }
 
+    public static ArrayList<HashMap<String, String>> findByValue(String value) {
+        // load data, if not already loaded
+        //containsvalue must find entire value , example) "Junior Data Analyst"
+        //.contains() is for a string and looks for squence of charecters
+        loadData();
+
+        ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
+
+        for (HashMap<String, String> row : allJobs) {
+
+            for (String key : row.keySet()) {
+                String aValue = row.get(key); //+" ";
+               // String aValueF = aValue.concat(aValue);
+                if (aValue.contains(value)) {
+                    jobs.add(row);
+                }
+            }
+
+        }
+        return jobs;
+    }
 }
