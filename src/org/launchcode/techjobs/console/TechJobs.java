@@ -111,14 +111,28 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
-        System.out.println("printJobs is not implemented yet");
+        //System.out.println("printJobs is not implemented yet");
         //print job if there is a search result
         //iterate over an arraylist of jobs(which each is a hashmap)
-        for (int i=0; i<someJobs.size(); i++){
-            someJobs.get(i)
+       // ArrayList<HashMap<String, String>> someJobs = jobs;
+    if (someJobs.size() == 0) {
+        System.out.println("No records found.");
+    }else {
+        for (int i = 0; i < someJobs.size(); i++) {
+            HashMap<String, String> foundJobs = someJobs.get(i);
+            System.out.println("*****");
+            for (String key : foundJobs.keySet()) {
+                System.out.println(key + ": " + foundJobs.get(key));
+            }
+            System.out.println("***** \n");
 
         }
+    }
         //variables needed: jobs
+//
+        //for (Integer Key: someJobs[i].keyset()){
+        //for (HashMap<String, String> row : someJobs.get(i)) {
+
         //make a nested loop to loop over each hashmap
         //make it so nexted loop will pring out any new field added  to the job records without any updates to printJobs
         /**
