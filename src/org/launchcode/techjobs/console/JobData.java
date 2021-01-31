@@ -140,6 +140,7 @@ public class JobData {
                // String aValueF = aValue.concat(aValue);
                 if (aValue.contains(value)) {
                     jobs.add(row);
+                    break;
                 }
             }
 
